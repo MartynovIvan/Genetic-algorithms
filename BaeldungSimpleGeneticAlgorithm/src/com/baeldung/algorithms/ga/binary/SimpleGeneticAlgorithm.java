@@ -23,7 +23,7 @@ public class SimpleGeneticAlgorithm {
 
         int generationCount = 1;
         while (myPop.getFittest().getFitness() < getMaxFitness()) {
-            System.out.println("Generation: " + generationCount + " Correct genes found: " + myPop.getFittest().getFitness());
+            System.out.println("Generation: " + generationCount + " Correct genes found: " + myPop.getFittest().getFitness() + " genes: " + myPop.getFittest().toString());
             myPop = evolvePopulation(myPop);
             generationCount++;
         }
